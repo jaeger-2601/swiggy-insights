@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "swiggy-insights"
+version = "0.1.0"
+description = ""
+authors = ["Harshaa Vardaan <harshaaloga@gmail.com>"]
+readme = "README.md"
+packages = [{include = "swiggy_insights"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jupyter = "^1.0.0"
+jupyterthemes = "^0.20.0"
+requests = "^2.31.0"
+python-dotenv = "^1.0.0"
+jupytext = "^1.14.5"
+plotly = "^5.14.1"
+
+
+[tool.poetry.group.dev.dependencies]
+black = {extras = ["jupyter"], version = "^23.7.0"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
